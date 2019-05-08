@@ -8,7 +8,7 @@ The image scanner will extract the relevant information from the scanned image, 
 
 **Team Members**
 
-Ryan Hartley u15016880
-Baven Pavaday u15336728
-Oluwatosin Botti u13208642
-Tlou Lebelo u15209190
+Ryan Hartley u15016880 <br>
+Baven Pavaday u15336728 <br>
+Oluwatosin Botti u13208642 <br>
+Tlou Lebelo u15209190 <br>
