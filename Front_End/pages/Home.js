@@ -9,6 +9,7 @@ import {
   Image,
   Alert
 } from 'react-native';
+import GpsTracker from '../gps/GpsTracker';
 
 export default class LoginView extends Component {
 
@@ -22,18 +23,19 @@ export default class LoginView extends Component {
 
   onFuelClaimClickListener = (login) => {
     this.props.navigation.navigate('Home')
+    //this.props.navigation.navigate('getlocation')
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight style={[styles.buttonContainer, styles.FuelClaim]} onPress={() => this.onFuelClaimClickListener('Fuel Claim')}>
-          <Text style={styles.FuelClaimText}>Fuel Claim</Text>
-        </TouchableHighlight>
-
-       <TouchableHighlight style={[styles.buttonContainer, styles.FuelClaim]}>
+        <GpsTracker/>
+        <TouchableHighlight 
+          style={[styles.buttonContainer, styles.FuelClaim]}
+        >
           <Text style={styles.FuelClaimText}>Other Claim</Text>
         </TouchableHighlight>
+        
       </View>
     );
   }
@@ -60,5 +62,13 @@ const styles = StyleSheet.create({
   },
   FuelClaimText: {
     color: 'white',
+  },
+  location: {
+    color: '#333333',
+    marginBottom: 5,
+  },
+  costPerDist: {
+      color: '#239B56',
+      marginBottom: 5,
   }
 });
